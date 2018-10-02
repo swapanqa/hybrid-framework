@@ -1,0 +1,656 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4396463700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EcobagsCommon.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "1.Valid user with valid password",
+        "description": "",
+        "id": "ecobags.com-login-functionality;1.valid-user-with-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 2936572100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EcobagsCommon.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 39856300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Not a validated user",
+            "match": {
+              "location": "EcobagsCommon.not_a_validated_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2571143900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User browse to the site",
+            "match": {
+              "location": "EcobagsCommon.user_browse_to_the_site()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61933600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Ecobags home page should display",
+            "match": {
+              "location": "HomePageStep1.ecobags_home_page_should_display()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1416500400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User click login link",
+            "match": {
+              "location": "HomePageStep1.user_click_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66271500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Browser display Login page",
+            "match": {
+              "location": "LoginPageStep1.browser_display_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 312590100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User enter user email as \"swapanny79@yahoo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "swapanny79@yahoo.com",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginPageStep1.user_enter_user_email_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 239421400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User enter password as \"ecobags2018\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ecobags2018",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginPageStep1.user_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 36 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.3.1\u0027, revision: \u00275234b325d5\u0027, time: \u00272017-03-10 09:10:29 +0000\u0027\nSystem info: host: \u0027SHIFT-PC01\u0027, ip: \u0027192.168.1.158\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00279.0.4\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:49173}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778), userDataDir\u003dC:\\Users\\SHIFTS~1\\AppData\\Local\\Temp\\scoped_dir3128_24929}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.100, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: d8c8faeb208086778d20f4891314adf5\n*** Element info: {Using\u003dclass name, value\u003d.btn btn-primary btn-large}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:460)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:391)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat com.bdd.LoginPageStep1.user_click_login_button(LoginPageStep1.java:32)\r\n\tat ✽.User click login button(feature/shafee.feature:32)\r\n",
+              "duration": 44873900,
+              "status": "failed"
+            },
+            "line": 32,
+            "name": "User click login button",
+            "match": {
+              "location": "LoginPageStep1.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "Home page should display",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Login success message display",
+            "match": {
+              "location": "HomePageStep1.login_success_message_display()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2566675200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EcobagsCommon.setUp()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "2.Invalid user with valid password",
+        "description": "",
+        "id": "ecobags.com-login-functionality;2.invalid-user-with-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 5404305000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EcobagsCommon.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27056400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Not a validated user",
+            "match": {
+              "location": "EcobagsCommon.not_a_validated_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1842850300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User browse to the site",
+            "match": {
+              "location": "EcobagsCommon.user_browse_to_the_site()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 39,
+            "name": "ecobags home page should display",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "User click login link",
+            "match": {
+              "location": "HomePageStep1.user_click_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "Browser display Login page",
+            "match": {
+              "location": "LoginPageStep1.browser_display_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "User enter user email as \"invalid@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid@gmail.com",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginPageStep1.user_enter_user_email_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "User enter password as \"ecobags2018\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ecobags2018",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginPageStep1.user_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "User click login button",
+            "match": {
+              "location": "LoginPageStep1.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "Browser display Login page",
+            "match": {
+              "location": "LoginPageStep1.browser_display_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "Login not success message \"Incorrect email or password.\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Incorrect email or password.",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginPageStep1.login_not_success_message_display(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2662846900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EcobagsCommon.setUp()"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "3.Valid user with valid password Data Driven",
+        "description": "",
+        "id": "ecobags.com-login-functionality;3.valid-user-with-valid-password-data-driven;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 898975400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EcobagsCommon.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 27310900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Not a validated user",
+            "match": {
+              "location": "EcobagsCommon.not_a_validated_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1922051000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User browse to the site",
+            "match": {
+              "location": "EcobagsCommon.user_browse_to_the_site()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49176300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Ecobags home page should display",
+            "match": {
+              "location": "HomePageStep1.ecobags_home_page_should_display()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1275243700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User click login link",
+            "match": {
+              "location": "HomePageStep1.user_click_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52818300,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Browser display Login page",
+            "match": {
+              "location": "LoginPageStep1.browser_display_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 293673800,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User enter user email as \"swapanny79@yahoo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "swapanny79@yahoo.com",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginPageStep1.user_enter_user_email_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 238401600,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User enter password as \"ecobags2018\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ecobags2018",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginPageStep1.user_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 32 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.3.1\u0027, revision: \u00275234b325d5\u0027, time: \u00272017-03-10 09:10:29 +0000\u0027\nSystem info: host: \u0027SHIFT-PC01\u0027, ip: \u0027192.168.1.158\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00279.0.4\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:49262}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778), userDataDir\u003dC:\\Users\\SHIFTS~1\\AppData\\Local\\Temp\\scoped_dir4860_14224}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.100, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 596709b1bd8d21407463b1d890a9a83f\n*** Element info: {Using\u003dclass name, value\u003d.btn btn-primary btn-large}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:460)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:391)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat com.bdd.LoginPageStep1.user_click_login_button(LoginPageStep1.java:32)\r\n\tat ✽.User click login button(feature/shafee.feature:56)\r\n",
+              "duration": 32820600,
+              "status": "failed"
+            },
+            "line": 56,
+            "name": "User click login button",
+            "match": {
+              "location": "LoginPageStep1.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 57,
+            "name": "Home page should display",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "Login success message display",
+            "match": {
+              "location": "HomePageStep1.login_success_message_display()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2641930600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EcobagsCommon.setUp()"
+            }
+          }
+        ],
+        "line": 62,
+        "name": "3.Valid user with valid password Data Driven",
+        "description": "",
+        "id": "ecobags.com-login-functionality;3.valid-user-with-valid-password-data-driven;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 910526200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EcobagsCommon.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24843000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Not a validated user",
+            "match": {
+              "location": "EcobagsCommon.not_a_validated_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1798242500,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User browse to the site",
+            "match": {
+              "location": "EcobagsCommon.user_browse_to_the_site()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35935900,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Ecobags home page should display",
+            "match": {
+              "location": "HomePageStep1.ecobags_home_page_should_display()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1294655800,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User click login link",
+            "match": {
+              "location": "HomePageStep1.user_click_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50475600,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Browser display Login page",
+            "match": {
+              "location": "LoginPageStep1.browser_display_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 343694300,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User enter user email as \"salmamamun91@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "salmamamun91@gmail.com",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginPageStep1.user_enter_user_email_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 205105800,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User enter password as \"ecobags91\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ecobags91",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginPageStep1.user_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 35 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.3.1\u0027, revision: \u00275234b325d5\u0027, time: \u00272017-03-10 09:10:29 +0000\u0027\nSystem info: host: \u0027SHIFT-PC01\u0027, ip: \u0027192.168.1.158\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00279.0.4\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:49306}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778), userDataDir\u003dC:\\Users\\SHIFTS~1\\AppData\\Local\\Temp\\scoped_dir840_4362}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.100, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 966bddfa4ad5ab058b9178553b78d5d0\n*** Element info: {Using\u003dclass name, value\u003d.btn btn-primary btn-large}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:460)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:391)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat com.bdd.LoginPageStep1.user_click_login_button(LoginPageStep1.java:32)\r\n\tat ✽.User click login button(feature/shafee.feature:56)\r\n",
+              "duration": 37038300,
+              "status": "failed"
+            },
+            "line": 56,
+            "name": "User click login button",
+            "match": {
+              "location": "LoginPageStep1.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 57,
+            "name": "Home page should display",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "Login success message display",
+            "match": {
+              "location": "HomePageStep1.login_success_message_display()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "ecobags.com login functionality",
+    "description": "  This explain how verious login functionality will work",
+    "id": "ecobags.com-login-functionality",
+    "keyword": "Feature",
+    "uri": "feature/shafee.feature",
+    "tags": []
+  }
+]

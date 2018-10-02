@@ -1,0 +1,139 @@
+Feature: ecobags.com login functionality
+  This explain how verious login functionality will work
+
+  Scenario: 1.Valid user with valid password             [90m# feature/shafee.feature:24[0m
+    [32mGiven [0m[32mNot a validated user[0m                           [90m# EcobagsCommon.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                         [90m# EcobagsCommon.user_browse_to_the_site()[0m
+    [32mThen [0m[32mEcobags home page should display[0m                [90m# HomePageStep1.ecobags_home_page_should_display()[0m
+    [32mWhen [0m[32mUser click login link[0m                           [90m# HomePageStep1.user_click_login_link()[0m
+    [32mThen [0m[32mBrowser display Login page[0m                      [90m# LoginPageStep1.browser_display_Login_page()[0m
+    [32mWhen [0m[32mUser enter user email as "[0m[32m[1mswapanny79@yahoo.com[0m[32m"[0m [90m# LoginPageStep1.user_enter_user_email_as(String)[0m
+    [32mAnd [0m[32mUser enter password as "[0m[32m[1mecobags2018[0m[32m"[0m             [90m# LoginPageStep1.user_enter_password_as(String)[0m
+    [31mAnd [0m[31mUser click login button[0m                          [90m# LoginPageStep1.user_click_login_button()[0m
+      [31morg.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'SHIFT-PC01', ip: '192.168.1.158', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49173}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778), userDataDir=C:\Users\SHIFTS~1\AppData\Local\Temp\scoped_dir3128_24929}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d8c8faeb208086778d20f4891314adf5
+*** Element info: {Using=class name, value=.btn btn-primary btn-large}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:460)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.bdd.LoginPageStep1.user_click_login_button(LoginPageStep1.java:32)
+	at ✽.User click login button(feature/shafee.feature:32)
+[0m
+    [33mThen [0m[33mHome page should display[0m                        [90m# null[0m
+    [36mAnd [0m[36mLogin success message display[0m                    [90m# HomePageStep1.login_success_message_display()[0m
+
+  Scenario: 2.Invalid user with valid password                           [90m# feature/shafee.feature:36[0m
+    [32mGiven [0m[32mNot a validated user[0m                                           [90m# EcobagsCommon.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                         [90m# EcobagsCommon.user_browse_to_the_site()[0m
+    [33mThen [0m[33mecobags home page should display[0m                                [90m# null[0m
+    [36mWhen [0m[36mUser click login link[0m                                           [90m# HomePageStep1.user_click_login_link()[0m
+    [36mThen [0m[36mBrowser display Login page[0m                                      [90m# LoginPageStep1.browser_display_Login_page()[0m
+    [36mWhen [0m[36mUser enter user email as "[0m[36m[1minvalid@gmail.com[0m[36m"[0m                    [90m# LoginPageStep1.user_enter_user_email_as(String)[0m
+    [36mAnd [0m[36mUser enter password as "[0m[36m[1mecobags2018[0m[36m"[0m                             [90m# LoginPageStep1.user_enter_password_as(String)[0m
+    [36mAnd [0m[36mUser click login button[0m                                          [90m# LoginPageStep1.user_click_login_button()[0m
+    [36mThen [0m[36mBrowser display Login page[0m                                      [90m# LoginPageStep1.browser_display_Login_page()[0m
+    [36mAnd [0m[36mLogin not success message "[0m[36m[1mIncorrect email or password.[0m[36m" display[0m [90m# LoginPageStep1.login_not_success_message_display(String)[0m
+
+  Scenario Outline: 3.Valid user with valid password Data Driven [90m# feature/shafee.feature:48[0m
+    [36mGiven Not a validated user[0m
+    [36mWhen User browse to the site[0m
+    [36mThen Ecobags home page should display[0m
+    [36mWhen User click login link[0m
+    [36mThen Browser display Login page[0m
+    [36mWhen User enter user email as "<EmailAddress>"[0m
+    [36mAnd User enter password as "<Password>"[0m
+    [36mAnd User click login button[0m
+    [36mThen Home page should display[0m
+    [36mAnd Login success message display[0m
+
+    Examples: 
+
+  Scenario Outline: 3.Valid user with valid password Data Driven [90m# feature/shafee.feature:61[0m
+    [32mGiven [0m[32mNot a validated user[0m                                   [90m# EcobagsCommon.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                 [90m# EcobagsCommon.user_browse_to_the_site()[0m
+    [32mThen [0m[32mEcobags home page should display[0m                        [90m# HomePageStep1.ecobags_home_page_should_display()[0m
+    [32mWhen [0m[32mUser click login link[0m                                   [90m# HomePageStep1.user_click_login_link()[0m
+    [32mThen [0m[32mBrowser display Login page[0m                              [90m# LoginPageStep1.browser_display_Login_page()[0m
+    [32mWhen [0m[32mUser enter user email as "[0m[32m[1mswapanny79@yahoo.com[0m[32m"[0m         [90m# LoginPageStep1.user_enter_user_email_as(String)[0m
+    [32mAnd [0m[32mUser enter password as "[0m[32m[1mecobags2018[0m[32m"[0m                     [90m# LoginPageStep1.user_enter_password_as(String)[0m
+    [31mAnd [0m[31mUser click login button[0m                                  [90m# LoginPageStep1.user_click_login_button()[0m
+      [31morg.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'SHIFT-PC01', ip: '192.168.1.158', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49262}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778), userDataDir=C:\Users\SHIFTS~1\AppData\Local\Temp\scoped_dir4860_14224}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 596709b1bd8d21407463b1d890a9a83f
+*** Element info: {Using=class name, value=.btn btn-primary btn-large}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:460)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.bdd.LoginPageStep1.user_click_login_button(LoginPageStep1.java:32)
+	at ✽.User click login button(feature/shafee.feature:56)
+[0m
+    [33mThen [0m[33mHome page should display[0m                                [90m# null[0m
+    [36mAnd [0m[36mLogin success message display[0m                            [90m# HomePageStep1.login_success_message_display()[0m
+
+  Scenario Outline: 3.Valid user with valid password Data Driven [90m# feature/shafee.feature:62[0m
+    [32mGiven [0m[32mNot a validated user[0m                                   [90m# EcobagsCommon.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                 [90m# EcobagsCommon.user_browse_to_the_site()[0m
+    [32mThen [0m[32mEcobags home page should display[0m                        [90m# HomePageStep1.ecobags_home_page_should_display()[0m
+    [32mWhen [0m[32mUser click login link[0m                                   [90m# HomePageStep1.user_click_login_link()[0m
+    [32mThen [0m[32mBrowser display Login page[0m                              [90m# LoginPageStep1.browser_display_Login_page()[0m
+    [32mWhen [0m[32mUser enter user email as "[0m[32m[1msalmamamun91@gmail.com[0m[32m"[0m       [90m# LoginPageStep1.user_enter_user_email_as(String)[0m
+    [32mAnd [0m[32mUser enter password as "[0m[32m[1mecobags91[0m[32m"[0m                       [90m# LoginPageStep1.user_enter_password_as(String)[0m
+    [31mAnd [0m[31mUser click login button[0m                                  [90m# LoginPageStep1.user_click_login_button()[0m
+      [31morg.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'SHIFT-PC01', ip: '192.168.1.158', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49306}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778), userDataDir=C:\Users\SHIFTS~1\AppData\Local\Temp\scoped_dir840_4362}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 966bddfa4ad5ab058b9178553b78d5d0
+*** Element info: {Using=class name, value=.btn btn-primary btn-large}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:460)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.bdd.LoginPageStep1.user_click_login_button(LoginPageStep1.java:32)
+	at ✽.User click login button(feature/shafee.feature:56)
+[0m
+    [33mThen [0m[33mHome page should display[0m                                [90m# null[0m
+    [36mAnd [0m[36mLogin success message display[0m                            [90m# HomePageStep1.login_success_message_display()[0m
